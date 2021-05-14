@@ -1,0 +1,64 @@
+.title {
+    text-shadow: 1px 0px 1px #005340, 0px 1px 1px #005340d3, 2px 1px 1px #005340, 1px 2px 1px #005340d3, 3px 2px 1px #005340;
+}
+
+h2,
+h3,
+h4,
+.info p:hover,
+footer p:hover,
+.our-team .teacherName,
+.our-team .teacherSkill,
+.our-team .social li a:hover {
+    color: #005340;
+}
+
+::-webkit-scrollbar-thumb,
+::selection,
+.dropdown-item:hover,
+#phone,
+.phone-content,
+#phone_btn,
+#message_btn,
+.our-team .pic,
+.our-team .pic:before,
+.our-team .social,
+.slick-arrow {
+    background: #005340;
+}
+
+.icon:hover {
+    border: 2px dotted #005340;
+    color: #005340;
+}
+
+.course,.navbar-dark .navbar-nav .nav-link {
+    border: 1px solid #005340;
+}
+
+#message input,
+#message textarea {
+    border-bottom: 3px solid #005340;
+}
+
+.form-control:focus {
+    border-color: #005340;
+    box-shadow: 0 0 0 0.1rem #005340;
+}
+
+#about .title{
+    border-bottom: 1px solid #005340;
+}
+
+#course .title,#contact .title,#why-programing .title,#what-programing .title,#teacher .title{
+    border-top:1px solid #005340;
+    border-bottom:1px solid #005340;
+}
+
+footer{
+    border-top: 1px solid #005340;
+}
+
+.nav-link::before{
+    background-color: #005340;
+}

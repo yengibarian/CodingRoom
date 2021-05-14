@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coding Room</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- link logo -->
+    <link href="image/codingroom.png" rel="shortcut icon" type="image/x-icon">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/option.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<body>
+    <!-- loader start -->
+    <div class="loader">
+        <img src="image/load.gif" alt="">
+    </div>
+    <!-- loader end -->
+    <!--  mobile start  -->
+    <botton class="round-phone btn" id='phone'>
+        <i class="fas fa-mobile-alt"></i>
+    </botton>
+
+    <div class="phone-message">
+        <div class="row d-flex  phone-content">
+            <p class='text-white'>Պատվիրել զանգ</p>
+            <i id='phone-close' class='fas fa-times text-danger'></i>
+        </div>
+        <div class="row phone-form">
+            <form id='mphone'>
+                <div class="form-group">
+                    <input id='pname' type="text" class="form-control" placeholder="Անուն">
+                </div>
+                <div class="form-group">
+                    <input id='pnumber' type="number" class="form-control" placeholder="041218941">
+                </div>
+                <button type="submit" class="btn  text-white" id='phone_btn'>Ուղարկել</button>
+            </form>
+        </div>
+    </div>
+    <!--  mobile end  -->
+
+    <!--options box-->
+    <div class="options_box animate_options_box">
+        <div class="cog">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="options">
+            <h4>Ընտրեք Գույնը</h4>
+            <div class="colors_box">
+                <div>
+                    <span class="color1 c__check" data-theme="default" title="Default"></span>
+                    <span class="color2" data-theme="color-green.css" title="Green"></span>
+                    <span class="color3" data-theme="color-purple.css" title="Purple"></span>
+                </div>
+                <div>
+                    <span class="color4" data-theme="color-lightblue.css" title="Lightblue"></span>
+                    <span class="color5" data-theme="color-lightgreen.css" title="Lightgreen"></span>
+                    <span class="color6" data-theme="color-red.css" title="Red"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End options box-->
+
+    <header>
+        <nav class=" navbar navbar-dark  fixed-top  navbar-expand-lg ">
+            <div class="container">
+                <div class="for-logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/logo.png" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler" style='outline: none;' type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-lg-auto text-white">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#about">Մեր Մասին</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course">Դասընթացներ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#teacher">Ուսուցիչներ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Հետադարձ Կապ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#what-programing" data-toggle="dropdown">
+                                Ծրագավորում </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" id='dropdown-item' href="#what-programing"> Ի՞նչ է
+                                        Ծրագավորումը</a></li>
+                                <li><a class="dropdown-item" id='dropdown-item' href="#why-programing"> Ինչու՞
+                                        Ծրագավորում </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------------SLIDE----------------------------- -->
+    <section id='sldie' style='margin-top: 100px;'>
+        <div id="write" class='d-flex justify-content-center align-items-center  '>
+            <h3><span class="animate"></span></h3>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item  active">
+                    <img class="d-block img-fluid " src="image/slide1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item  ">
+                    <img class="d-block img-fluid " src="image/slide2.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid " src="image/slide3.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid " src="image/slide4.jpg" alt="For slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid " src="image/slide5.jpg" alt="Five slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- ----------------------------------ABOUT----------------------------- -->
+    <section id='about' class='mb-5'>
+        <div class="row title">
+            <h2>Մեր Մասին</h2>
+        </div>
+        <div class="container">
+            <div class="row mt-5 justify-content-lg-start justify-content-sm-center ">
+                <video controls src="video/CodingRoom.mp4"> </video>
+            </div>
+            <div
+                class="row text-white about-text justify-content-lg-start justify-content-sm-center  text-lg-left text-sm-center ">
+                <h3 class='mt-2'>Coding Room</h3>
+                <p class='mb-0'>Coding Room ծրագրավորման ուսումնական կենտրոնը իր գործունեությունը ծավալելով Հայաստանում՝
+                    Երևանում կոչված է կրթել դպրոցականների, ուսանողների և անձանց, ովքեր պատրաստ են ձեռք բերել նոր
+                    մասնագիտություն և նոր աշխատանք:
+                </p>
+                <p class='mb-0'>
+                    Ծրագրավորումը՝ ժամանակակից աշխարհում ներդրում գրեթե չպահանջող և մեծ հնարավորություն տվող, ամենամեծ
+                    պահանջարկ վայլող մասնագիտություններից մեկն է: Դառնալով լավ մասնագետ այս ոլորտում, հնարավորություն
+                    կստանաք բարձր վարձատրվել և ապահովել արժանապատիվ ապագա:
+                </p>
+                <p class='mb-0'>
+                    Ծրագավորումը մասնագիտություն է, որը չի ճանաչում ազգություն, տարիք և սեռ: Այն հնարավորություն է տալիս
+                    աշխատել ցանկացած երկրում, գրասենյակում կամ այլ պայմաններում: Դրա համար բավարար է ունենալ համակարգիչ
+                    և ինտերնետ:
+                </p>
+                <p>
+                    Մասնակցելով Coding Room-ի կազմակերպած դասընթացներին՝ Դուք կստանաք համապատասխան գիտելիքներ այս
+                    ոլորտում, կմասնագիտանաք ՏՏ դաշտում, ձեռք կբերեք դարի կարևորագույն մասնագիտություններից մեկը, կստանաք
+                    արհեստավարժ մասնագետների կողմից անահատական վերաբերմունք
+                    և հետագայում բարձր վարձատրվող աշխատանք:
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------------COURSE----------------------------- -->
+    <section id='course' class='pb-5'>
+        <div class="row title">
+            <h2>Դասընթացներ</h2>
+        </div>
+        <div class="container">
+            <div class="for-front d-flex flex-wrap justify-content-center mt-5">
+                <div class="course">
+                    <div class="course-inner">
+                        <div class="course-front">
+                            <img src="image/front1.jpg" alt="image" id='courseimg'>
+                        </div>
+                        <div class="course-back">
+                            <h4>HTML/CSS/BOOTSTRAP</h4>
+                            <p>
+                                <span>FRONT END</span> Նախնական գիտելիքներ չեն պահանջվում Ուսման տևողությունը <span>1
+                                    ամիս</span> Խմբային դասընթացի ամսավճարը 35000 դրամ Անհատական դասընթացինը 70000 դրամ:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-inner">
+                        <div class="course-front">
+                            <img src="image/front2.png" alt="image" id='courseimg'>
+                        </div>
+                        <div class="course-back">
+                            <h4>JS/JQUERY</h4>
+                            <p>
+                                <span>FRONT END</span> Նախնական գիտելիքներ պահանջվում են HTML, CSS: Ուսման տևողությունը
+                                <span> 2 ամիս</span> Խմբային դասընթացի ամսավճարը 35000 դրամ Անհատական դասընթացինը 70000
+                                դրամ:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-inner">
+                        <div class="course-front">
+                            <img src="image/front3.jpg" alt="image" id='courseimg'>
+                        </div>
+                        <div class="course-back">
+                            <h4>Node JS կամ React JS</h4>
+                            <p>Նախնական գիտելիքներ պահանջվում են HTML, CSS, JS: Ուսման տևողությունը <span> 1.5-2
+                                    ամիս</span> Խմբային դասընթացի ամսավճարը 35000 դրամ Անհատական դասընթացինը 70000 դրամ:
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-inner">
+                        <div class="course-front">
+                            <img src="image/front4.png" alt="image" id='courseimg'>
+                        </div>
+                        <div class="course-back">
+                            <h4>PHP/Laravel/MySql</h4>
+                            <p>
+                                <span>BACK END</span> Նախնական գիտելիքներ պահանջվում են HTML, CSS, JS: Ուսման
+                                տևողությունը <span> 3 ամիս</span> Խմբային դասընթացի ամսավճարը 35000 դրամ Անհատական
+                                դասընթացինը 70000 դրամ:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-inner">
+                        <div class="course-front">
+                            <img src="image/front5.png" alt="image" id='courseimg'>
+                        </div>
+                        <div class="course-back">
+                            <h4>Պրակտիկա Անվճար</h4>
+                            <p>
+                                Պրակտիկայի նպատակը ուսանողների կիրառական գիտելիքների զարգացումն է կոնկրետ գործունեության
+                                ընթացքում։Պրակտիկայի տևողությունը <span>1 ամիս</span> :
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------what programing----------------------------- -->
+    <section id='what-programing' class='mb-5'>
+        <div class="row title">
+            <h2>Ինչ է Ծրագրավորումը</h2>
+        </div>
+        <div class="row m-5">
+            <div class="col-lg-5 mt-3 d-flex justify-content-center">
+                <img class='img-fluid img-thumbnail' src="image/what.png" alt="">
+            </div>
+            <div class="col-lg-7 mt-3 text-lg-left text-sm-center text-white">
+                <p class='mb-0'>Ծրագրավորումը ինստրուկցիաների հաջորդականություն է, որը մարդիկ տալիս են համակարգիչներին
+                    ինչ-որ գործողություններ կատարելու համար։ Օրինակ՝ Սիսիանի ավագ դպրոցի աշակերտներից Էդգարը ստեղծել է
+                    «Խելացի ժամացույցը», որը յուրաքանչյուր 45 րոպեն
+                    մեկ տալիս է դպրոցի զանգը։ Կամ ֆեյսբուքի ծրագրերից մեկն ամեն օր ձեզ հուշում է, թե ձեր ընկերներից ում
+                    ծննդյան օրն է այսօր։ </p>
+                <p>Սակայն ինչի՞ համար ենք մենք դա անում, չէ՞ որ մարդիկ էլ կարող են յուրաքանյուր 45 րոպեն մեկ տալ դպրոցի
+                    զանգը։ Սա էլ հենց պատասխանն է, այսինքն` ծրագրավորումը ստեղծված է նրա համար, որ մարդկանց կյանքն
+                    ավելի հեշտացվի, մեր խնդիրները լուծվի և մեր աշխատանքն ավելի արդյունավետ դառնա։ Ծրագրավորման
+                    առավելություններից ամենակարևորները նրանք են, որ համակարգիչները երբեք չեն հոգնում, երբեք չեն քնում,
+                    կարող են աշխատել օրական 24 ժամ, ունեն
+                    շատ մեծ հիշողություն և շատ ավելի արագ են, քան մարդիկ։ </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------------why programing----------------------------- -->
+    <section id='why-programing' class='mb-5'>
+        <div class="row title">
+            <h2>Ինչու Ծրագրավորում</h2>
+        </div>
+        <div class="row m-5 flex-sm-row-reverse">
+            <div class="col-lg-5 mt-3 d-flex justify-content-center">
+                <img class='img-fluid img-thumbnail' src="image/why.jpg" alt="">
+            </div>
+            <div class="col-lg-7 mt-3 text-lg-left text-sm-center text-white ">
+                <p class='mb-0'>
+                    Անշուշտ ծրագրավորումն այսօր հանդիսանում է աշխարհում ամենապահանջված մասնագիտությունը։ Ծրագրավորումն
+                    անգամ գրավում է հումանիտար կրթությամբ կամ կրթություն չունեցող մարդկանց, իսկ գիտեք ինչու, որովհետև
+                    տիրապետելով այդ մասնագիտությանը, դուք կարող եք ազատություն
+                    տալ ձեր երևակայությանը վիրտուալ աշխարհում, և որ ամենակարևորն է, այն հանդիսանում է ամենաբարձր
+                    վարձատրվող մասնագիտություններից մեկը և այն չի սահմանափակում ձեզ աշխատավայրով։ Դուք կարող ես զբաղվել
+                    ծրագրավորմամբ որտեղ ցանկանում եք։
+                </p>
+                <p>
+                    Ծրագրավորողները սովորաբար ստիպված չեն լինում ամբողջ օրը անցկացնել ձանձրալի աշխատավայրում, շփվել
+                    նյարդայնացնող աշխատակիցների ու ղեկավարների հետ։ Նրանք պարզապես վերցնում են իրենց առաջադրանքները և
+                    սահմանված ժամկետում կատարում այն։ Կարևոր է աշխատանքը կատարել
+                    պատշաճ որակով, իսկ թե ինչպես և որտեղ այն կանե, որոշում ես ինքդ։
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------------teacher----------------------------- -->
+    <section id='teacher' class='mb-5'>
+        <div class="row title">
+            <h2>Ուսուցիչներ</h2>
+        </div>
+        <!-- <div class="container"> -->
+            <div class="m-5 for-teach  d-flex align-items-center">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="image/user.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class='teacherName'>Անուն Ազգանուն</h3>
+                        <span class='teacherSkill'>HTML/CSS</span>
+                    </div>
+                    <ul class='social'>
+                        <li><a href="" class='fab fa-facebook'></a></li>
+                        <li><a href="" class='fab fa-google'></a></li>
+                        <li><a href="" class='fab fa-twitter'></a></li>
+                        <li><a href="" class='fab fa-linkedin'></a></li>
+                    </ul>
+                </div>
+                <div class="our-team ">
+                    <div class="pic">
+                        <img src="image/user.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class='teacherName'>Անուն Ազգանուն</h3>
+                        <span class='teacherSkill'>JS</span>
+                    </div>
+                    <ul class='social'>
+                        <li><a href="" class='fab fa-facebook'></a></li>
+                        <li><a href="" class='fab fa-google'></a></li>
+                        <li><a href="" class='fab fa-twitter'></a></li>
+                        <li><a href="" class='fab fa-linkedin'></a></li>
+                    </ul>
+                </div>
+                <div class="our-team ">
+                    <div class="pic">
+                        <img src="image/user.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class='teacherName'>Անուն Ազգանուն</h3>
+                        <span class='teacherSkill'>React/Redux</span>
+                    </div>
+                    <ul class='social'>
+                        <li><a href="" class='fab fa-facebook'></a></li>
+                        <li><a href="" class='fab fa-google'></a></li>
+                        <li><a href="" class='fab fa-twitter'></a></li>
+                        <li><a href="" class='fab fa-linkedin'></a></li>
+                    </ul>
+                </div>
+                <div class="our-team  ">
+                    <div class="pic">
+                        <img src="image/user.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class='teacherName'>Անուն Ազգանուն</h3>
+                        <span class='teacherSkill'>PHP/Laravel</span>
+                    </div>
+                    <ul class='social'>
+                        <li><a href="" class='fab fa-facebook'></a></li>
+                        <li><a href="" class='fab fa-google'></a></li>
+                        <li><a href="" class='fab fa-twitter'></a></li>
+                        <li><a href="" class='fab fa-linkedin'></a></li>
+                    </ul>
+                </div>
+                <div class="our-team  ">
+                    <div class="pic">
+                        <img src="image/user.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class='teacherName'>Անուն Ազգանուն</h3>
+                        <span class='teacherSkill'>HTML/CSS</span>
+                    </div>
+                    <ul class='social'>
+                        <li><a href="" class='fab fa-facebook'></a></li>
+                        <li><a href="" class='fab fa-google'></a></li>
+                        <li><a href="" class='fab fa-twitter'></a></li>
+                        <li><a href="" class='fab fa-linkedin'></a></li>
+                    </ul>
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+    <!-- ----------------------------------CONTACT----------------------------- -->
+    <section id='contact' class='pb-2'>
+        <div class="row title">
+            <h2>Կապվեք մեզ հետ</h2>
+        </div>
+        <div class="container">
+            <div class="row text-center d-flex flex-wrap justify-content-center mt-5">
+                <div class="card  text-white">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="info">
+                        <p> 041 218941</p>
+                        <p>Երկուշաբթի-Ուրբաթ 9:00 մինչև 18:00</p>
+                    </div>
+                </div>
+                <div class="card text-white">
+                    <div class="icon">
+                        <i class="fas fa-sms"></i>
+                    </div>
+                    <div class="info">
+                        <p> coding.room@mail.ru</p>
+                        <a style='text-decoration: none; color:white' href="#">
+                            <p>Web: www.codingroom.am</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card text-white">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info">
+                        <p>Location: Սունդուկյան 5/4</p>
+                        <p>Yerevan, Armenia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-lg-flex flex-lg-row flex-sm-column mt-5">
+                <div class="col-lg-4  col-sm-12 mb-3">
+                    <form id='message'>
+                        <div class="form-group">
+                            <input type="text" id='mname' class="form-control " placeholder="Անուն">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id='memail' class="form-control " placeholder="Էլ. հասցե">
+                        </div>
+                        <div class="form-group">
+                            <textarea id='mmessage' placeholder="Հաղորդագրություն" class="form-control "
+                                rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn  text-white" id='message_btn'>Ուղարկել</button>
+                    </form>
+                </div>
+                <div class="col-lg-8  col-sm-12 mb-3">
+                    <iframe class='w-100'
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.8749657454773!2d44.49556892920115!3d40.197942523073614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd14cfc9d0c5%3A0x94d1129dfbbc6aed!2s5%20Gabriel%20Sundukyan%20St%2C%20Yerevan%200033%2C%20Armenia!5e0!3m2!1sen!2s!4v1591985405132!5m2!1sen!2s"
+                        height='300' frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around p-4">
+                <div class="for-subscribe">
+                    <a target="_blank"
+                        href="https://www.facebook.com/codingroom.it/?hc_ref=ARQE1ftJw2uhno4Sdvan5fjN6DjG4V8Qu0OlWbFzHWWIUa5fibWoktinb7frcidcn6c&fref=nf&__tn__=kC-R"
+                        class='button facebook'>
+                        <i class='fab fa-facebook-f'></i>
+                    </a>
+                </div>
+
+                <div class="for-subscribe">
+                    <a href="" class='button twitter'>
+                        <i class='fab fa-twitter'></i>
+                    </a>
+                </div>
+
+                <div class="for-subscribe">
+                    <a href="" class='button google'>
+                        <i class='fab fa-google'></i>
+                    </a>
+                </div>
+
+                <div class="for-subscribe">
+                    <a href="" class='button linkedin'>
+                        <i class='fab fa-linkedin-in'></i>
+                    </a>
+                </div>
+
+                <div class="for-subscribe">
+                    <a href="" class='button pinterest'>
+                        <i class='fab fa-pinterest'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class='text-white pt-4 pb-2'>
+        <div class="container">
+            <div class=" row text-center d-flex flex-column ">
+                <p>© 2020 Coding Room</p>
+                <p>Բոլոր իրավունքները պաշտպանված են: </p>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/option.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        var typed = new Typed('.animate', {
+            strings: [
+                'Միացիր մեզ OnLine',
+                'Միացիր մեզ OffLine'
+            ],
+            typeSpeed: 100,
+            backSpeed: 100,
+            smartBackspace: true,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

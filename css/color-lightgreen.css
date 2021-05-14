@@ -1,0 +1,64 @@
+h2,
+h3,
+h4,
+.info p:hover,
+footer p:hover,
+.our-team .teacherName,
+.our-team .teacherSkill,
+.our-team .social li a:hover {
+    color: #b4e73c;
+}
+
+::-webkit-scrollbar-thumb,
+::selection,
+.dropdown-item:hover,
+#phone,
+.phone-content,
+#phone_btn,
+#message_btn,
+.our-team .pic,
+.our-team .pic:before,
+.our-team .social,
+.slick-arrow {
+    background: #b4e73c;
+}
+
+.title {
+    text-shadow: 1px 0px 1px #b4e73c, 0px 1px 1px #b4e73cd7, 2px 1px 1px #b4e73c, 1px 2px 1px #b4e73cd7, 3px 2px 1px #b4e73c;
+}
+
+.icon:hover {
+    border: 2px dotted #b4e73c;
+    color: #b4e73c;
+}
+
+.course,.navbar-dark .navbar-nav .nav-link {
+    border: 1px solid #b4e73c;
+}
+
+#message input,
+#message textarea {
+    border-bottom: 3px solid #b4e73c;
+}
+
+.form-control:focus {
+    border-color: #b4e73c;
+    box-shadow: 0 0 0 0.1rem #b4e73c;
+}
+
+#about .title{
+    border-bottom: 1px solid #b4e73c;
+}
+
+#course .title,#contact .title,#why-programing .title,#what-programing .title,#teacher .title{
+    border-top:1px solid #b4e73c;
+    border-bottom:1px solid #b4e73c;
+}
+
+footer{
+    border-top: 1px solid #b4e73c;
+}
+
+.nav-link::before{
+    background-color: #b4e73c;
+}

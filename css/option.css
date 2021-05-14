@@ -1,0 +1,150 @@
+/*option box*/
+.options_box{
+    position: fixed;
+    top: 18%;
+    left: 0;
+    z-index: 555;
+    color: #666;
+    transition: 0.5s ease-in-out;
+    transform: translateX(-100%);
+    border-left: none;
+}
+
+.animate_options_box{
+    transform: translateX(0);
+}
+
+.options_box .cog{
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-left: none;
+    text-align: right;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -34px;
+    text-align: center;
+    background: #F1F1F1;
+}
+
+.options_box .cog i {
+    display: inline-block;
+    cursor: pointer;
+    color: #313131;
+    font-size: 15px;
+    position: relative;
+    top: -1px;
+    padding: 10px;
+    animation: fa-spin 2s linear infinite;
+}
+
+.options {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.options_box h4{
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    padding-bottom: 11px;
+    padding-top: 7px;
+    text-align: center;
+    color: #333;
+    background: #F1F1F1;
+}
+
+.options_box .select-t{
+    text-align: center;
+}
+
+.options_box button{
+    background: transparent;
+    border: 1px solid #333;
+    padding: 3px 26px;
+    transition: ease-in-out 0.1s;
+}
+
+.options_box button:first-of-type{
+    border-radius: 5px 0 0 5px;
+    background: rgb(49, 49, 49);
+    color: #fff;
+    border-color: #333;
+}
+
+.options_box button:last-of-type{
+    border-radius: 0 5px 5px 0;
+    color: #000;
+}
+
+.options_box button:last-of-type:hover{
+    color: #222;
+    background-color: #fafafa;
+}
+
+.options_box button:first-of-type:hover{
+    background: rgba(49, 49, 49, 0.95);
+}
+
+.options_box button:focus {
+    outline: none;
+}
+
+.options_box .colors_box {
+    padding: 12px;
+    padding-bottom: 5px;
+}
+
+.options_box .colors_box div{
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.colors_box span {
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.c__check:after {
+    content:'\2713';
+    color: #FFF;
+    position: absolute;
+    line-height: 35px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.options_box .colors_box .color1{
+    background-color: #f9cf47;
+}
+
+.options_box .colors_box .color2{
+    background-color: #005340;
+}
+
+.options_box .colors_box .color3{
+    background-color: #9b59b6;
+}
+
+.options_box .colors_box .color4{
+    background-color: #00a394;
+}
+
+.options_box .colors_box .color5{
+    background-color: #b4e73c;
+}
+
+.options_box .colors_box .color6{
+    background-color: #cd445e;
+}
+
+/*end option box*/

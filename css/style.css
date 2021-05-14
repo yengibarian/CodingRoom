@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2c2c2c;
+}
+
+.round-phone {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+    left: calc(100% - 95px);
+    bottom: 25px;
+    line-height: 40px;
+    font-size: 25px;
+    z-index: 9;
+}
+
+.phone-message {
+    position: fixed;
+    width: 275px;
+    height: 270px;
+    right: 30px;
+    z-index: 1;
+    bottom: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+    z-index: 9;
+}
+
+.phone-content {
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    background-color: #ffc107;
+    z-index: 9;
+}
+
+#phone_btn,
+#message_btn {
+    background-color: #ffc107;
+}
+
+.phone-content p {
+    margin: 0 auto;
+}
+
+#phone-close {
+    cursor: pointer;
+    z-index: 7;
+}
+
+#phone {
+    color: #212529;
+    background-color: #ffc107;
+    z-index: 7;
+}
+
+.phone-form {
+    padding: 30px 15px;
+}
+
+.phone-form input {
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.loader{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-color: #161519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9000;
+}
+
+.loader img{
+    width: 100px;
+    height: 100px;
+}
+
+::selection {
+    background: #f9cf47;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f9cf47;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #2c2c2c;
+}
+
+.for-logo {
+    transition: 0.9s;
+}
+
+.for-logo:hover {
+    transform: scale(0.8, 0.8);
+    transition: 0.9s;
+}
+
+.nav-item{
+    padding: 5px 7px;
+}
+
+.navbar .nav-item .dropdown-menu{ display: none;  }
+.navbar .nav-item:hover .nav-link{ color: #fff;  }
+.navbar .nav-item:hover .dropdown-menu{ display: block; }
+.navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+.dropdown-item:hover{
+    background-color: #f9cf47;
+}
+
+.navbar-dark .navbar-nav .nav-link  {
+    text-align: center;
+    color: white;
+    border:1px solid #f9cf47;
+    transition: 1s all ease;
+    position: relative;
+}
+
+.nav-link::before{
+    background-color: #f9cf47;
+    content: '';
+    position: absolute;
+    transition: all 0.6s ease;
+    left: 50%;
+    top: 20px;
+    width: 0;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:hover::before  {
+    width: 100%;
+}
+
+
+
+.row {
+    margin: 0;
+}
+
+.title {
+    height: 70px;
+    text-shadow: 1px 0px 1px #e2ae03, 0px 1px 1px #ffef14, 2px 1px 1px #e2ae03, 1px 2px 1px #ffef14, 3px 2px 1px #e2ae03;
+}
+
+#about .title{
+    border-bottom: 1px solid #f9cf47;
+}
+
+#course{
+    background-image: url('../image/courseback.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact{
+    background-image: url('../image/programingback.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#course .title,#contact .title,#why-programing .title,#what-programing .title,#teacher .title{
+    border-top:1px solid #f9cf47 ;
+    border-bottom:1px solid #f9cf47 ;
+}
+
+h2 {
+    color: #f9cf47;
+    margin: 0 auto;
+    line-height: 69px;
+}
+
+video {
+    outline: none;
+}
+
+
+
+h3 {
+    color: #f9cf47;
+}
+
+.abot-text p {
+    margin-bottom: 0;
+}
+
+
+.course {
+    width: 302px;
+    height: 202px;
+    border: 1px solid #f9cf47;
+    perspective: 1000px;
+    margin: 15px;
+    background-color: #2c2c2c;
+}
+
+#courseimg {
+    width: 300px;
+    height: 200px
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.course-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.course:hover .course-inner {
+    transform: rotateY(180deg);
+}
+
+.course-front,
+.course-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.course-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.course-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+h4 {
+    color: #f9cf47;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.course-back p {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.course-back span {
+    color: #00a394;
+}
+
+ .card {
+     border: none;
+    width: 315px;
+    height: 200px;
+    margin: 15px;
+    justify-content: center;
+    background: #222222;
+    align-items: center;
+    transition: .5s;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+
+.our-team{
+    margin: 10px  ;
+    padding: 30px 0 40px;
+    background: #222222;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 380px;
+    border-radius: 5px;
+    outline: none;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+    background: #f9cf47;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.our-team .pic:before{
+    content: '';
+    width: 105%;
+    background: #f9cf47;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .pic:before{
+    height: 30%;
+}
+
+.our-team .pic:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.our-team .pic img{
+    width: 131px;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+.our-team:hover  .pic img{
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+
+}
+
+.our-team .team-content{
+    margin-bottom: 30px;
+}
+
+.our-team .teacherName{
+    font-size: 22px;
+    font-weight: 700;
+    color: #f9cf47;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.our-team .teacherSkill{
+    display: block;
+    font-size: 15px;
+    color: #f9cf47;
+    text-transform: capitalize;
+}
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #f9cf47;
+    position: absolute;
+    bottom: -100px;
+    /* top: 0; */
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social{
+    bottom: 0;
+}
+.our-team .social li{
+    display: inline-block;
+
+}
+.our-team .social li a{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    outline: none;
+
+}
+
+.our-team .social li a:hover{
+    color: #f9cf47;
+    background: #f7f5ec;
+    text-decoration: none;
+}
+
+
+.icon {
+    border: 2px dotted ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover {
+    border: 2px dotted #f9cf47;
+    color: #f9cf47;
+}
+
+.icon i {
+    font-size: 25px;
+}
+
+.info {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info p:hover,
+.info>a:hover {
+    color: #f9cf47;
+}
+
+#message input,
+#message textarea {
+    border-bottom: 3px solid #f9cf47;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    color: #495057;
+    border-color: #f9cf47;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #f9cf47;
+}
+
+.for-subscribe {
+    border-radius: 10px;
+    height: 96px;
+    width: 96px;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 15px;
+    transition: ease 1.5s;
+}
+
+.button {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    position: relative;
+    top: -3px;
+    margin-left: 3px;
+    text-align: center;
+    line-height: 93px;
+    transition: all 0.2s;
+}
+
+.button:active {
+    transform: translate3d(0, 7px, 0);
+    border-style: 0 0 0 #000;
+}
+
+.facebook {
+    background-color: #3a5795;
+    box-shadow: 0px 7px 0 0 #253753;
+    transition: ease 1.5s;
+}
+
+.for-subscribe:hover {
+    transform: rotate(0deg);
+    transition: ease 1.5s;
+}
+
+.twitter {
+    background-color: #5ea9dd;
+    box-shadow: 0px 7px 0 0 #2a85c5;
+    transition: ease 1.5s;
+}
+
+.google {
+    background-color: #c90307;
+    box-shadow: 0px 7px 0 0 #790604;
+    transition: ease 1.5s;
+}
+
+.linkedin {
+    background-color: #0274b3;
+    box-shadow: 0px 7px 0 0 #014367;
+    transition: ease 1.5s;
+}
+
+.pinterest {
+    background-color: #d70094;
+    box-shadow: 0px 7px 0 0 #8b0078;
+    transition: ease 1.5s;
+}
+
+.fab {
+    font-size: 30px !important;
+    color: white;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 557px;
+}
+
+#write {    
+    z-index: 1;
+    position: absolute;
+    background-color: #00000059;
+    left:calc((100% - 270px) / 2 );
+    top: 175px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+#write h3 {
+    font-size: 25px;
+}
+
+footer{
+    border-top:1px solid #f9cf47 ;
+}
+
+footer p:hover {
+    color: #f9cf47;
+}
+
+@media (max-width: 576px) { 
+     #about,#what-programing,#why-programing{
+        text-align: center;
+    }
+    h3{
+        margin: 0 auto;
+        padding: 10px 0 ;
+    }
+    video{
+        width: 300px;
+        margin:  0 auto;
+    }
+
+}
+
+@media (max-width: 325px) { 
+    h2{
+        font-size:28px;
+    }
+    #write h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .course{
+        width: 275px;
+    }
+    #courseimg{
+        width: 261px;
+    }
+    .button{
+        width: 80px;
+        height: 80px;
+    }
+    .for-subscribe{
+        width: 60px;
+        height: 60px;
+        margin: 30px;
+    }
+    #write{
+        z-index: 0;
+    }
+    .our-team{
+        margin: 2px;
+
+    }
+    .our-team .pic {
+        margin-bottom: 40px;
+    }
+}
